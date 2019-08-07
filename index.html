@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hitung Pohon</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tree.html">Tree</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                </ul>
+            </div>
+    </nav>
+      <p class="webtitle text-center pt-1">Web App Menghitung Pohon
+      </p>
+    <div class="container marginatas">
+        <div class="text-center text-md-left mx-5">
+            <form class="marginx" id="myForm" method="POST">
+                <div class="form-group">
+                  <label for="PilihPohon">Silakan Pilih Pohon</label>
+                  <select class="form-control" id="exampleFormControlSelect1"name="pohon">
+                    <option></option>  
+                    <option>Apel</option>
+                    <option>Belimbing</option>
+                    <option>Buah Naga</option>
+                    <option>Cermai</option>
+                    <option>Delima</option>
+                    <option>Durian</option>
+                    <option>Duwet</option>
+                    <option>Jambu Air</option>
+                    <option>Jambu Biji</option>
+                    <option>Jeruk</option>
+                    <option>Kelengkeng</option>
+                    <option>Manggis</option>
+                    <option>Pepaya</option>
+                    <option>Pisang</option>
+                    <option>Rambutan</option>
+                    <option>Sawo</option>
+                    <option>Sirsak</option>
+                    <option>Srikaya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Masukkan Luas Lahan</label>
+                  <input class="form-control" id="luas_lahan" type="text" placeholder="Input Here" name="luas" />
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                  <button type="button" class="btn btn-secondary mx-1" onclick="show()">Hitung</button>
+                  <button type="button" class="btn btn-secondary mx-1" onclick="myFunction()" value="Reset form">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container border">
+        <div class="mx-4 my-4 d-flex flex-column">
+           <div class="text-center" id="output" style="display:none">
+              Dengan luas lahan sebesar meter persegi, maka dapat ditanamkan bibit Pohon  berdiameter cm sebanyak, dengan jarak antar bibit dengan bibit sekitarnya sebesar m.
+           </div> 
+        </div>
+    </div>
+    <footer class="footerstyle page-footer font-small special-color-dark pt-3 mt-4">
+          <div class="text-center">Semoga Dengan Adanya Web Application Menghitung Pohon Ini,
+          </div>
+          <div class="text-center"> Pekebun Mendapatkan Banyak Manfaat Dan Keuntungan
+          </div>
+          <div class="text-center"> -Faisal Yudha S-
+          </div>
+          <div class="footer-copyright text-center py-3">© 2019 Copyright: 
+          <a href="http://52416525.student.gunadarma.ac.id/">Faisal Yudha S (52416525)</a>
+          </div>
+    </footer>
+        <script>
+            function myFunction() {
+              document.getElementById("myForm").reset();
+              document.getElementById("output").style.display="none";
+            }
+            function show() {
+			  document.getElementById("output").style.display="block";
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script> 
+</div>

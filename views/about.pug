@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.sticky-top
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse.d-flex.justify-content-center
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='/')
+            | Home 
+            span.sr-only
+        li.nav-item
+            a.nav-link(href='/tree') Tree
+        li.nav-item
+            a.nav-link(href='/about') About
+  .text-center.pt-5
+    img(src='/images/logo.PNG', alt='', style='width:20%')
+  p.container.text-center.my-4
+      | Web App Menghitung Pohon merupakan sebuah web aplikasi yang dirancang untuk memudahkan pekebun dalam menghitung jumlah pohon buah yang dapat ditanam pada lahan yang dimiliki pekebun. Web aplikasi ini memberikan informasi mengenai klasifikasi, syarat tanam, dan cara penanaman dari berbagai pohon buah tertentu, juga memberikan informasi mengenai luas yang dibutuhkan untuk menanam satu bibit pohon buah dan jarak tanam antar bibit yang akan ditanam sehingga lahan dapat digunakan secara efisien. 
+  .container.text-center.pb-3
+    h4
+      | Sebagian besar informasi pohon di website aplikasi ini diambil dari Buku 
+      i
+        b Grow Your Own Fruits
+      |   oleh Cahyo Saparinto dan Rini Susiana           
+  footer.footerstyle.page-footer.font-small.special-color-dark.pt-3
+    .text-center
+        | Semoga Dengan Adanya Web Application Menghitung Pohon Ini,
+    .text-center
+        | Pekebun Mendapatkan Banyak Manfaat Dan Keuntungan
+    .text-center
+        | -Faisal Yudha S-
+    .footer-copyright.text-center.py-3
+        | &copy; 2019 Copyright: 
+        a(href='http://52416525.student.gunadarma.ac.id/') Faisal Yudha S (52416525)

@@ -1,0 +1,39 @@
+.marginx {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.navbar {
+    background-color: black !important;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.marginatas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.webtitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.footerstyle {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: lightgrays;    
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block !important;
+}

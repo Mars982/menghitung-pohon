@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.sticky-top
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse.d-flex.justify-content-center
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='/')
+            | Home 
+            span.sr-only
+        li.nav-item
+            a.nav-link(href='/tree') Tree
+        li.nav-item
+            a.nav-link(href='/about') About
+  p.webtitle.text-center.pt-1
+    | Web App Menghitung Pohon
+  .container.marginatas
+    .text-center.text-md-left.mx-5
+      form#myForm.marginx(method='POST')
+        .form-group
+          label(for='PilihPohon') Silakan Pilih Pohon
+          select#exampleFormControlSelect1.form-control(name='pohon')
+            option
+            option Apel
+            option Belimbing
+            option Buah Naga
+            option Cermai
+            option Delima
+            option Durian
+            option Duwet
+            option Jambu Air
+            option Jambu Biji
+            option Jeruk
+            option Kelengkeng
+            option Manggis
+            option Pepaya
+            option Pisang
+            option Rambutan
+            option Sawo
+            option Sirsak
+            option Srikaya
+        .form-group
+          label(for='exampleFormControlInput1') Masukkan Luas Lahan
+          input#luas_lahan.form-control(type='text', placeholder='Input Here (meter persegi)', name='luas')
+        .form-group.d-flex.justify-content-center
+          button.btn.btn-secondary.mx-1(type='submit') Hitung
+          //- button.btn.btn-secondary.mx-1(type='button', onclick='myFunction()', value='Reset form') Reset
+          a.btn.btn-secondary(href='/', role='button', aria-pressed='true') Reset
+  .container.border
+    .mx-4.my-4.d-flex.flex-column
+      p.text-center
+        | Dengan luas lahan sebesar 
+        b #{luas} meter persegi
+        |  , maka dapat ditanamkan bibit Pohon 
+        b #{pohon} 
+        | berdiameter 
+        b #{diameter_bibit} cm
+        |  sebanyak 
+        b #{jumlah_pohon} bibit
+        | , dengan jarak antar bibit dengan bibit sekitarnya sebesar 
+        b #{jarak} m.
+  footer.footerstyle.page-footer.font-small.special-color-dark.pt-3.mt-4
+    .text-center
+      | Semoga Dengan Adanya Web Application Menghitung Pohon Ini,
+    .text-center
+      | Pekebun Mendapatkan Banyak Manfaat Dan Keuntungan
+    .text-center  
+      | -Faisal Yudha S-
+    .footer-copyright.text-center.py-3
+      | &copy; 2019 Copyright: 
+      a(href='http://52416525.student.gunadarma.ac.id/') Faisal Yudha S (52416525)
+      
