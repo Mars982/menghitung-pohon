@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hitung Pohon</title>
+    <title>Web App Hitung Pohon</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -58,20 +58,18 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Masukkan Luas Lahan</label>
-                  <input class="form-control" id="luas_lahan" type="text" placeholder="Input Here" name="luas" />
+                  <input class="form-control" id="luas_lahan" type="text" placeholder="Input Here (meter persegi)" name="luas" />
                 </div>
                 <div class="form-group d-flex justify-content-center">
-                  <button type="button" class="btn btn-secondary mx-1" onclick="show()">Hitung</button>
-                  <button type="button" class="btn btn-secondary mx-1" onclick="myFunction()" value="Reset form">Reset</button>
+                  <button type="submit" class="btn btn-secondary mx-1">Hitung</button>
+                  <a class="btn btn-secondary" href="/" role="button" aria-pressed="true">Reset</a>
                 </div>
             </form>
         </div>
     </div>
     <div class="container border">
         <div class="mx-4 my-4 d-flex flex-column">
-           <div class="text-center" id="output" style="display:none">
-              Dengan luas lahan sebesar meter persegi, maka dapat ditanamkan bibit Pohon  berdiameter cm sebanyak, dengan jarak antar bibit dengan bibit sekitarnya sebesar m.
-           </div> 
+            <p class="text-center">Dengan luas lahan sebesar <b> meter persegi</b>, maka dapat ditanamkan bibit <b>Pohon  </b>berdiameter <b> cm</b> sebanyak <b> bibit</b>, dengan jarak antar bibit dengan bibit sekitarnya sebesar <b> m.</b></p>
         </div>
     </div>
     <footer class="footerstyle page-footer font-small special-color-dark pt-3 mt-4">
@@ -85,15 +83,6 @@
           <a href="http://52416525.student.gunadarma.ac.id/">Faisal Yudha S (52416525)</a>
           </div>
     </footer>
-        <script>
-            function myFunction() {
-              document.getElementById("myForm").reset();
-              document.getElementById("output").style.display="none";
-            }
-            function show() {
-			  document.getElementById("output").style.display="block";
-            }
-        </script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
